@@ -1,56 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find your senior</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"></head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+  </head>
+  <body>
     <div class="title-container">
-        <h1>Find your senior 👩‍💻👨‍💻</h1>
+      <h1>Find your senior 👩‍💻👨‍💻</h1>
     </div>
-   <div class="container">
-   
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
+    <div class="container">
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span onclick="closeModal()" class="close">&times;</span>
+          <div class="senior-details">
+            <h2 class="modal-senior-name"></h2>
+            <img class="modal-senior-pic" />
+          </div>
+          <p class="senior-story">Some text in the Modal..</p>
+          <p class="">Work hard play hard is the key for success</p>
 
-       
-
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span onclick="closeModal()" class="close">&times;</span>
-      <div class="senior-details">
-        <h2 class="modal-senior-name"></h2>
-        <img class="modal-senior-pic" />
-        
+          <p class="about-me">
+            There is another option- hire me! My name is Shay Ronen. I'm a
+            Full-stack developer with 1-year of experience, and Computer science
+            student in the open university of Israel. Yes, I'm still not a
+            senior, but I am passionate about creating amazing products using
+            cutting-edge technologies. Intresting? Contact me via mail:
+            <a href="mailto:shayronen138@gmail.com"
+              >Click here to send me a mail</a
+            >
+          </p>
+        </div>
       </div>
-      <p class="senior-story">Some text in the Modal..</p>
-      <p class="">But hey, we work hard and conssit is a key for success! keep playing.</p>
-
-        <p class="about-me">
-            There is another option- hire me! My name is Shay Ronen. I'm a Full-stack developer with 1-year of experience. Yes, I'm still not a superhero ninja coder, but I am passionate about creating amazing products using cutting-edge technologies.
-
-            Intresting? Contact me via mail: <a href="mailto:shayronen138@gmail.com">Click here to send me a mail</a>
-        </p>
     </div>
-</div>
-</div>
-<div class="about">
-    <footer>
-        Shay Ronen - <a href="https://shayronen.netlify.app/">shayronen.netlify.com</a>
-    </footer>
-</div>
-<script type="module" src="./app.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script></body>
-<script>
-     const closeModal = () => {
-        const modal = document.querySelector('#myModal')
+    <div class="about">
+      <footer>
+        Shay Ronen -
+        <a href="https://shayronen.netlify.app/">shayronen.netlify.com</a>
+        <div class="boxes">
+          <div>
+            <span class="text-secondary">Email:</span>
+            <a href="mailto:Shayronen138@gmail.com"> Shayronen138@ gmail.com</a>
+          </div>
+          <div>
+            <span class="text-secondary">Phone:</span>
+            <a href="tel:+972-50-645-5468">+972-50-645-5468</a>
+          </div>
+        </div>
+        <div class="icons">
+          <a href="https://www.facebook.com/shay.ronen.1" target="blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://github.com/wwwshayronen" target="blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/shay-ronen-3434b4172/"
+            target="blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/c2ff852413.js"></script>
+    <script type="module" src="./app.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+  </body>
+  <script>
+    const closeModal = () => {
+      const modal = document.querySelector("#myModal");
 
-        modal.style.display = "none"
-}
-
-
-</script>
+      modal.style.display = "none";
+    };
+  </script>
 </html>

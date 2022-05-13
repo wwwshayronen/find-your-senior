@@ -18,9 +18,8 @@ body {
 .card {
   padding: 5px;
   margin: 0;
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-  background: #3E1E68;
+
+  background: #3e1e68;
   overflow: hidden;
   position: relative;
   border-top-left-radius: 0px;
@@ -39,7 +38,7 @@ img {
   height: 90px;
   width: 90px;
   border-radius: 50%;
-  border: 5px solid #272133;
+  border: 2px solid #272133;
   margin-top: 20px;
   box-shadow: 0 10px 50px rgb(255, 161, 199);
   margin: 1rem;
@@ -118,6 +117,38 @@ footer > a {
   font-style: italic;
 }
 
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 6px;
+}
+.boxes div {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+}
+a:hover {
+  color: rgb(249, 194, 255);
+}
+
+i {
+  color: whitesmoke;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  font-size: 20px;
+}
+
+i:hover {
+  color: rgb(249, 194, 255);
+}
+
+.icons > a {
+  text-decoration: none;
+}
+
+
 @media only screen and (max-width: 600px) {
   .container {
     display: grid;
@@ -129,6 +160,12 @@ footer > a {
 
   .card {
     max-width: 130px;
+    max-height: 90px;
+  }
+
+  img {
+    width: 60px;
+    height: 60px;
   }
 }
 
