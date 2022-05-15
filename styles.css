@@ -149,6 +149,10 @@ i:hover {
   text-decoration: none;
 }
 
+.perfect-fit{
+  object-fit: cover;
+}
+
 
 @media only screen and (max-width: 600px) {
   .container {

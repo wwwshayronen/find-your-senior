@@ -119,7 +119,7 @@ const createCards = () => {
 
   seniors.forEach((senior) => {
     cards += `<div onclick="myFunction(this, ${senior.flipped}, ${senior.id})" class="card">
-         <img id=${senior.id} class="senior-pic" src="${senior.image}" alt="${senior.name}">
+         <img id=${senior.id} class="senior-pic perfect-fit" src="${senior.image}" alt="${senior.name}">
  </div>`;
   });
 
