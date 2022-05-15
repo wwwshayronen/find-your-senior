@@ -110,6 +110,7 @@ const initGame = () => {
 
 const suffleArray = () => {
   seniors.sort(() => Math.random() - 0.5);
+  seniors.forEach((item, newIndex) => item.id = newIndex)
 } 
 
 const createCards = () => {
