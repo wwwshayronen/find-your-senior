@@ -248,7 +248,7 @@ const openModal = (seniorDeatails) => {
     storyParagraph.textContent = seniorDeatails.story + "😶";
     seniorPicElem.src = seniorDeatails.image;
     seniorNameElem.textContent = seniorDeatails.name;
-    }, 500);
+    }, 1000);
   
 };
 
