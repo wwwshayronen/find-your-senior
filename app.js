@@ -243,10 +243,12 @@ const openModal = (seniorDeatails) => {
   const seniorPicElem = document.querySelector(".modal-senior-pic");
   const seniorNameElem = document.querySelector(".modal-senior-name");
 
-    modal.style.display = "block";
+    setTimeout(() => {
+      modal.style.display = "block";
     storyParagraph.textContent = seniorDeatails.story + "😶";
     seniorPicElem.src = seniorDeatails.image;
     seniorNameElem.textContent = seniorDeatails.name;
+    }, 500);
   
 };
 
