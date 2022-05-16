@@ -264,9 +264,14 @@ const removeAnimation = (id) => {
   const images = document.querySelectorAll(".senior-pic");
   images.forEach((img, imgID) => {
       if(imgID === id) {
-        img.parentElement.classList.remove("card-flipped");
+        img.parentElement.removeEventListener(('animationend'), () => {
+          console.log('Animation ended');
+            return true
+        })
       }
   })
+
+  return false
 }
 
 
