@@ -182,11 +182,15 @@ i:hover {
 @keyframes cardFlip {
   0% {
     transform: rotateZ(0deg) rotateY(180deg);
+    -webkit-transform: rotateZ(0deg) rotateY(180deg);
+
   }
   50% {
     transform: rotateZ(-10deg) rotateY(90deg);
+    -webkit-transform: rotateZ(-10deg) rotateY(90deg);
   }
   100% {
     transform: rotateZ(0deg) rotateY(0deg);
+    -webkit-transform: rotateZ(0deg) rotateY(0deg);
   }
 }
