@@ -103,15 +103,15 @@ const matchedCards = [];
 let boardLocked = false;
 
 const initGame = () => {
-  suffleArray()
+  suffleArray();
   createCards();
   hideCards();
 };
 
 const suffleArray = () => {
   seniors.sort(() => Math.random() - 0.5);
-  seniors.forEach((item, newIndex) => item.id = newIndex)
-} 
+  seniors.forEach((item, newIndex) => (item.id = newIndex));
+};
 
 const createCards = () => {
   const container = document.querySelector(".container");
@@ -242,10 +242,14 @@ const openModal = (seniorDeatails) => {
   const storyParagraph = document.querySelector(".senior-story");
   const seniorPicElem = document.querySelector(".modal-senior-pic");
   const seniorNameElem = document.querySelector(".modal-senior-name");
-  modal.style.display = "block";
-  storyParagraph.textContent = seniorDeatails.story + "😶";
-  seniorPicElem.src = seniorDeatails.image;
-  seniorNameElem.textContent = seniorDeatails.name;
+  
+  removeAnimation(seniorDeatails.id)
+
+    modal.style.display = "block";
+    storyParagraph.textContent = seniorDeatails.story + "😶";
+    seniorPicElem.src = seniorDeatails.image;
+    seniorNameElem.textContent = seniorDeatails.name;
+  
 };
 
 window.onclick = function (event) {
@@ -255,5 +259,15 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+const removeAnimation = (id) => {
+  const images = document.querySelectorAll(".senior-pic");
+  images.forEach((img, imgID) => {
+      if(imgID === id) {
+        img.parentElement.classList.remove("card-flipped");
+      }
+  })
+}
+
 
 initGame();
