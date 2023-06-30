@@ -79,8 +79,21 @@ img {
   text-align: center;
 }
 
+.modal-content-finish {
+  background-color: #3e1e68;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  color: white;
+}
+
 .finishModal {
   display: none;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -106,12 +119,9 @@ img {
   cursor: pointer;
 }
 
-p {
-  font-size: larger;
-}
-
 .bold-text {
   font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .senior-details {
@@ -153,7 +163,7 @@ footer > a {
   margin-bottom: 1rem;
 }
 a:hover {
-  color: rgb(249, 194, 255);
+  color: rgb(254, 247, 255);
 }
 
 i {
@@ -163,7 +173,11 @@ i {
 }
 
 i:hover {
-  color: rgb(249, 194, 255);
+  color: rgb(252, 223, 255);
+}
+
+.email-link > a:hover {
+  color: black;
 }
 
 .icons > a {
