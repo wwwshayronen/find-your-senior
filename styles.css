@@ -154,13 +154,12 @@ footer > a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
-  gap: 6px;
+  margin-top: 0.5rem;
+  /* gap: 6px; */
 }
 .boxes div {
   font-size: 1rem;
-  padding: 1rem 2rem;
-  margin-bottom: 1rem;
+  padding: 0.5rem;
 }
 a:hover {
   color: rgb(254, 247, 255);
